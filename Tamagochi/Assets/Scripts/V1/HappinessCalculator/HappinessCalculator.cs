@@ -17,6 +17,19 @@ public class HappinessCalculator
 		return value / parameters.Length;
 	}
 
+	public static float Calculate (params float [] parameters)
+	{
+		float value = 0;
+
+		foreach (var parameter in parameters) 
+		{
+			value += parameter;
+		}
+
+		return value / parameters.Length;
+	}
+
+
 
 	public static float Calculate (List <ICharacteristic> list)
 	{

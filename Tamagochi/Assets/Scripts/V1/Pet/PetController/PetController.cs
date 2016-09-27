@@ -11,13 +11,15 @@ namespace Tamagochi.V1
 		public delegate void PetControllerDelegate ();
 		public event PetControllerDelegate OnHappinessEmpty;
 
-		[HideInInspector]
-		public Image currentPetSprite;
+		private Image currentPetSprite;
 
 		// Sprites for pet
-		public Sprite petDeadSprite;
-		public Sprite petHappySprite;
-		public Sprite petSadSprite;
+		[SerializeField]
+		private Sprite petDeadSprite;
+		[SerializeField]
+		private Sprite petHappySprite;
+		[SerializeField]
+		private Sprite petSadSprite;
 
 
 		// This field calculate in class
@@ -26,7 +28,7 @@ namespace Tamagochi.V1
 		/// <summary>
 		/// The objects of characteristics.
 		/// </summary>
-		public List <AbstractCharacteristic> characteristics;
+		public List <CharacteristicBase> characteristics;
 
 	
 		/// <summary>

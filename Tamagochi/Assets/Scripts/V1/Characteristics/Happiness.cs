@@ -4,7 +4,7 @@ using Tamagochi.Constants;
 
 namespace Tamagochi.V1
 {
-	public class Happiness : AbstractCharacteristic 
+	public class Happiness : CharacteristicBase 
 	{
 		public void SetCharacteristicValue (float value)
 		{

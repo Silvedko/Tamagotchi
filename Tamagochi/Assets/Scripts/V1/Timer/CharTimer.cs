@@ -21,10 +21,16 @@ public class CharTimer : MonoBehaviour
 	/// </summary>
 	string[] values = new string[2];
 
-	public void StopTimer (bool value)
+	public void StopTimer ()
 	{
-		stopTimer = value;
+		stopTimer = true;
 		endTime = 0;
+	}
+
+	public void StartTimer ()
+	{
+		stopTimer = false;
+		endTime = GameConstants.timeToReduceValues;
 	}
 
 	public void ResetTimer ()
